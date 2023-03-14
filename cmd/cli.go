@@ -39,7 +39,7 @@ var cli = &cobra.Command{
 		for count := 1; ; count++ {
 			username, password := input(userHome)
 			// access maven repo with auth
-			if apiKey = access(username, password, url); apiKey != "" { //登录成功
+			if apiKey = access(username, password, url); apiKey != "" { //login success!
 				break
 			} else {
 				fmt.Printf("please input with no more 3 times")
